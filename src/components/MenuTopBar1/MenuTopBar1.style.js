@@ -15,7 +15,15 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLogo = styled(Logo)`
-  margin-right: 85px;
+  margin-right: 50px;
+
+  ${({ theme }) => theme.media.lgAbove} {
+    margin-right: 170px;
+  }
+
+  ${({ theme }) => theme.media.xlAbove} {
+    margin-right: 200px;
+  }
 `;
 
 export const StyledWrapper = styled.ul`

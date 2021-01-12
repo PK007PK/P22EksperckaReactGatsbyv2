@@ -116,7 +116,7 @@ export const StyledTxtWrapper = styled.div`
   }
 
   .subtitle {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 30px;
     line-height: 1.5;
     text-align: right;

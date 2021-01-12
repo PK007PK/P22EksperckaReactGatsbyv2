@@ -1,8 +1,4 @@
 const colorValues = {
-  lightBlue: '#EDF7FF',
-  blue: '#ADCCE4',
-  deepBlue: '#313548',
-  pink: '#EB4962',
   //
   white: '#FFFFFF',
   black: '#000000',

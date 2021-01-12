@@ -1,8 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import IconYT from '../../components/IconYT/IconYT';
-import IconFB from '../../components/IconFB/IconFB';
+import IconEmail from '../../components/IconEmail/IconEmail';
 
 import {
   StyledSection,
@@ -28,19 +27,16 @@ const HeadingHeroRight = () => {
             </p>
             <div className="buttonWrapper">
               <a
-                href={data.datoCmsSiteSetup.facebookLink}
+                href={`mailto:${data.datoCmsSiteSetup.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
-                <IconFB />
+                <IconEmail />
               </a>
-              <StyledButton
-                small
-                href={data.datoCmsSiteSetup.youtubeChanelLink}
-              >
+              <StyledButton small href={`tel:${data.datoCmsSiteSetup.phone}`}>
                 {' '}
-                +48 733 730 870 <IconYT small />
+                +48 733 730 870
               </StyledButton>
             </div>
           </div>
@@ -59,6 +55,8 @@ const query = graphql`
   {
     datoCmsSiteSetup {
       mainPageMotto
+      phone
+      email
       mainPageAdditionalText
       mainPageDescription
       youtubeChanelLink
