@@ -40,7 +40,7 @@ const HeadingHeroRight = () => {
                 href={data.datoCmsSiteSetup.youtubeChanelLink}
               >
                 {' '}
-                Sprawdź mój vlog <IconYT small />
+                +48 733 730 870 <IconYT small />
               </StyledButton>
             </div>
           </div>

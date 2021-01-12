@@ -15,7 +15,7 @@ const paragraphValues = {
     lg: null,
     xxl: null,
   },
-  fontWeight: '500',
+  fontWeight: '300',
   letterSpacing: null,
 };
 

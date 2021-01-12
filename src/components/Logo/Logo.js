@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { StyledWrap, StyledP, StyledSpan } from './Logo.style';
+import { StyledLogo } from './Logo.style';
 
 const Logo = ({ className, secondary }) => (
-  <StyledP secondary={secondary} className={className}>
-    Obywatel
-    <StyledSpan className="logoTxtSec">kontra ZUS</StyledSpan>
-  </StyledP>
+  <StyledLogo className={className} secondary={secondary}>
+    <div className="top">Obywatel</div>
+    <div className="bottom">
+      <span>kontra </span> ZUS
+    </div>
+  </StyledLogo>
 );
 
 Logo.propTypes = {

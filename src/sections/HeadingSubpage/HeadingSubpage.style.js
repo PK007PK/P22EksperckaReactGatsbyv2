@@ -60,6 +60,7 @@ export const StyledTxtWrapper = styled.div`
   .description {
     display: block;
     max-width: 95%;
+    font-weight: 500;
   }
 `;
 
@@ -109,12 +110,12 @@ export const StyledDiv = styled.div`
     transform: translate(-100%, -50%);
     width: 400px;
     height: 280px;
-    border: 16px solid rgba(15, 53, 83, 0.4);
+    /* border: 16px solid rgba(15, 53, 83, 0.4); */
   }
 
   ${({ theme }) => theme.media.lgAbove} {
     width: 500px;
     height: 350px;
-    border: 16px solid rgba(15, 53, 83, 0.4);
+    /* border: 16px solid rgba(15, 53, 83, 0.4); */
   }
 `;

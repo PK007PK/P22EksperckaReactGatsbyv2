@@ -19,7 +19,7 @@ const HeadingSubpage = ({ fluid, alt, title, slug, description }) => (
         <p className="description">{description}</p>
       </StyledTxtWrapper>
       <StyledImageWrapper>
-        <StyledImage fluid={fluid} alt={alt} />
+        <StyledImage alt={alt} />
         {console.log(alt)}
         <StyledDiv />
       </StyledImageWrapper>
