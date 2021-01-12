@@ -42,22 +42,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`300`, '500', '700'],
-            subsets: ['latin-ext'],
-          },
-          {
-            family: `Ubuntu`,
-            variants: ['700'],
-          },
-          {
-            family: `Covered By Your Grace`,
-          },
+          `Ubuntu\:700`,
+          `Montserrat\:300,500,700`, // you can also specify font weights and styles
         ],
+        display: 'swap',
       },
     },
     {
