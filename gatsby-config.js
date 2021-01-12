@@ -45,7 +45,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Ubuntu\:700`,
+          `Covered By Your Grace`,
           `Montserrat\:300,500,700`, // you can also specify font weights and styles
         ],
         display: 'swap',
