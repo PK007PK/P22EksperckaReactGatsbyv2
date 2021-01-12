@@ -12,7 +12,8 @@ const sectionHeight = {
   mdLandscape: `700px`,
   lg: `700px`,
   lgLandscape: `calc(100vh - 98px + 50px)`,
-  xxl: `calc(100vh - 98px + 50px)`,
+  // xxl: `calc(100vh - 98px + 50px)`,
+  xl: `750px`,
 };
 
 const heroImgSizes = {
@@ -29,7 +30,10 @@ const heroImgSizes = {
     height: `calc(100vh - 98px + 120px)`,
     width: `calc((100vh - 98px + 120px) * 0.666)`,
   },
-  xxl: `(100vh - 98px + 50px)`,
+  xl: {
+    height: `800px`,
+    width: `calc(800px * 0.666)`,
+  },
 };
 
 export const StyledSection = styled.section`
@@ -100,7 +104,7 @@ export const StyledTxtWrapper = styled.div`
   }
 
   ${({ theme }) => theme.media.xlAbove} {
-    padding-right: 360px;
+    padding-right: 200px;
     width: 65%;
   }
 
@@ -176,6 +180,8 @@ export const StyledImage = styled(Image)`
   }
 
   ${({ theme }) => theme.media.xlAbove} {
-    margin-right: 8vw;
+    margin-right: 20vw;
+    height: ${heroImgSizes.xl.height};
+    width: ${heroImgSizes.xl.width};
   }
 `;

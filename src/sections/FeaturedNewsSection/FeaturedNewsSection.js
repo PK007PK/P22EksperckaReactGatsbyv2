@@ -63,7 +63,7 @@ const FeaturedNewsSection = () => {
         slidesPerView: 3,
       },
       1550: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
   };

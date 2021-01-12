@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../assets/theme/theme';
 
 export const BootsContainer = styled.div`
   width: 100%;
@@ -25,13 +26,36 @@ export const BootsContainer = styled.div`
   ${({ theme }) => theme.media.xlAbove} {
     max-width: ${({ theme }) => theme.maxContainerWidth.xl}px;
   }
+
+  ${({ theme }) => theme.media.xlAbove} {
+    ${({ noXl }) =>
+      noXl &&
+      `
+      {
+        max-width: ${({ theme }) => theme.maxContainerWidth.lg}px;
+      }
+    `}
+  }
+
 `;
 
 export const BootsRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0px -15px;
   position: relative;
+
+  ${({ margin }) => margin && `margin: ${margin};`}
+
+  ${({ marginColumnBelow = 'mdBelow', marginValue }) =>
+    marginColumnBelow && theme.media[marginColumnBelow]} {
+    & > * {
+      margin-bottom: ${({ marginValue = '24px;' }) => marginValue};
+    }
+    & > *:last-child {
+      margin-bottom: 0px;
+    }
+  }
 `;
 
 export const BootsColumn = styled.div`
@@ -53,7 +77,15 @@ export const BootsColumn = styled.div`
       }
     `}
 
-
+    ${({ xxs }) =>
+    xxs &&
+    `
+      {
+        max-width: ${(xxs / 12) * 100}%;
+        flex: 0 0 ${(xxs / 12) * 100}%;
+      }
+    `}
+  
   ${({ theme }) => theme.media.xsAbove} {
     ${({ xs }) =>
       xs &&
@@ -108,4 +140,13 @@ export const BootsColumn = styled.div`
       }
     `}
   }
+`;
+
+export const BootsPaper = styled.div`
+  margin-bottom: 24px;
+`;
+
+export const BodyWrapper = styled.div`
+  min-height: 100vh;
+  position: relative;
 `;
