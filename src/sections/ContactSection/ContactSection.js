@@ -24,13 +24,6 @@ const ContactSection = () => {
           <div>
             <p>Email: {data.datoCmsSiteSetup.email} </p>
           </div>
-          <a
-            href={data.datoCmsSiteSetup.facebookLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconFB />
-          </a>
         </BootsColumn>
       </BootsRow>
     </StyledSectionLayout>

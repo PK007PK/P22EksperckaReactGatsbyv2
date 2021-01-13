@@ -20,9 +20,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
-    max-width: 2700px;
-    margin-left: auto;
-    margin-right: auto;
+
   }
   
   button {

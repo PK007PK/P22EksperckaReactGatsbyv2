@@ -38,8 +38,6 @@ const heroImgSizes = {
 
 export const StyledSection = styled.section`
   height: ${sectionHeight.base};
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-bottom: 100px;
 
   ${({ theme }) => theme.media.xsAbove} {
@@ -48,9 +46,9 @@ export const StyledSection = styled.section`
 
   ${({ theme }) => theme.media.smAbove} {
     height: ${sectionHeight.sm};
-    background-image: none;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     position: relative;
     padding-bottom: 0px;
 
@@ -89,23 +87,23 @@ export const StyledTxtWrapper = styled.div`
   padding: 20px;
 
   ${({ theme }) => theme.media.smAbove} {
-    width: 100%;
+    /* width: 100%; */
     padding-right: 40px;
   }
 
   ${({ theme }) => theme.media.mdAbove} {
-    width: 60%;
+    /* width: 60%; */
   }
 
   ${({ theme }) => theme.media.lgAbove} {
     padding-right: 60px;
-    width: 65%;
+    /* width: 65%; */
     padding-bottom: 100px;
   }
 
   ${({ theme }) => theme.media.xlAbove} {
     padding-right: 200px;
-    width: 65%;
+    /* width: 50%; */
   }
 
   div {
@@ -117,9 +115,13 @@ export const StyledTxtWrapper = styled.div`
 
   .subtitle {
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: right;
+
+    ${({ theme }) => theme.media.smAbove} {
+      font-size: 30px;
+    }
   }
 
   h1 {
@@ -164,14 +166,14 @@ export const StyledImage = styled(Image)`
 
     @media (orientation: landscape) {
       margin-top: -70px;
-      margin-right: 40px;
+      /* margin-right: 40px; */
     }
   }
 
   ${({ theme }) => theme.media.lgAbove} {
     height: ${heroImgSizes.lg.height};
     width: ${heroImgSizes.lg.width};
-    margin-right: 5vw;
+    /* margin-right: 5vw; */
 
     @media (orientation: landscape) {
       height: ${heroImgSizes.lgLandscape.height};
@@ -180,7 +182,7 @@ export const StyledImage = styled(Image)`
   }
 
   ${({ theme }) => theme.media.xlAbove} {
-    margin-right: 20vw;
+    /* margin-right: 20vw; */
     height: ${heroImgSizes.xl.height};
     width: ${heroImgSizes.xl.width};
   }
