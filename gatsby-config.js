@@ -59,17 +59,17 @@ module.exports = {
     },
     `gatsby-plugin-layout`,
     `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Katarzyna Mrozowska. Obywatel kontra ZUS`,
-        short_name: `Obywatel kontra ZUS`,
-        start_url: `/`,
-        background_color: `green`,
-        theme_color: `red`,
-        display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Katarzyna Mrozowska. Obywatel kontra ZUS`,
+    //     short_name: `Obywatel kontra ZUS`,
+    //     start_url: `/`,
+    //     background_color: `green`,
+    //     theme_color: `red`,
+    //     display: `minimal-ui`,
+    //     icon: `src/images/gatsby-icon.png`,
+    //   },
+    // },
   ],
 };

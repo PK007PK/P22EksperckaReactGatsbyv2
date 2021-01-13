@@ -99,6 +99,7 @@ export const StyledTxtWrapper = styled.div`
     padding-right: 60px;
     /* width: 65%; */
     padding-bottom: 100px;
+    margin-left: 100px;
   }
 
   ${({ theme }) => theme.media.xlAbove} {
