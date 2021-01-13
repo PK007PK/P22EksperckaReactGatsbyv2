@@ -55,6 +55,11 @@ export const StyledTxtWrapper = styled.div`
   .slug {
     color: ${({ theme }) => theme.color.pink};
     font-weight: ${({ theme }) => theme.fontWeight.bold};
+    margin-top: 50px;
+
+    ${({ theme }) => theme.media.mdAbove} {
+      margin-top: 0;
+    }
   }
 
   .description {
