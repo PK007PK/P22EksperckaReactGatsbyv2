@@ -13,7 +13,7 @@ const KontaktPage = ({ data }) => {
       <article>
         <HeadingSubpage
           fluid={data.datoCmsSiteSetup.policyPageHeroImage.fluid}
-          title="polityka prywatności"
+          title="Polityka prywatności"
           slug="#polityka"
           description={data.datoCmsSiteSetup.policyPageDescription}
           alt={data.datoCmsSiteSetup.policyPageHeroImage.alt}

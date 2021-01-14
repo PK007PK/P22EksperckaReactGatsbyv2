@@ -13,7 +13,7 @@ const KontaktPage = ({ data }) => {
       <article>
         <HeadingSubpage
           fluid={data.datoCmsSiteSetup.kontaktPageHeroImage.fluid}
-          title="kontakt"
+          title="Kontakt"
           slug="#kontakt"
           description={data.datoCmsSiteSetup.kontaktPageDescription}
           alt={data.datoCmsSiteSetup.kontaktPageHeroImage.alt}

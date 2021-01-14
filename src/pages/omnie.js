@@ -13,7 +13,7 @@ const OMniePage = ({ data }) => {
       <article>
         <HeadingSubpage
           fluid={data.datoCmsSiteSetup.oMniePageHeroImage.fluid}
-          title="o mnie"
+          title="O mnie"
           slug="#o-mnie"
           description={data.datoCmsSiteSetup.oMniePageDescription}
           alt={data.datoCmsSiteSetup.oMniePageHeroImage.alt}

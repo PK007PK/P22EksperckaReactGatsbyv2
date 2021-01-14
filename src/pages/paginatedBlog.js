@@ -26,7 +26,7 @@ export default function paginatedBlogPage({ data, pageContext }) {
       <article>
         <HeadingSubpage
           fluid={data.datoCmsSiteSetup.blogPageHeroImage.fluid}
-          title="blog"
+          title="Blog"
           slug="#blog"
           description={data.datoCmsSiteSetup.blogPageDescription}
           alt={data.datoCmsSiteSetup.blogPageHeroImage.alt}

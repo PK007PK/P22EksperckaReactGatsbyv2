@@ -14,7 +14,7 @@ const HeadingSubpage = ({ fluid, alt, title, slug, description }) => (
   <BootsContainer>
     <StyledSection>
       <StyledTxtWrapper>
-        <span className="slug">{slug}</span>
+        {/* <span className="slug">{slug}</span> */}
         <h1>{title}</h1>
         <p className="description">{description}</p>
       </StyledTxtWrapper>
